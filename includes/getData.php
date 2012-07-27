@@ -13,6 +13,7 @@ function getList($table, $in_sql, $first, $max)
 	else { $first = 0; }
 	if ($max!= "" && $max >= 0) { }
 	else { $max = 10; }
+	//echo $sql;
 	$sql .= " limit %s, %s;";
 	$query_data = sprintf($sql, $table, $in_sql, $first, $max);
 	//echo $query_data;
@@ -350,6 +351,13 @@ function format_features($type, $keys, $cases)
 		$str = implode("||", $list_n);
 	}
 	return $str;
+}
+
+function checkInput($type, $value)
+{
+	$match = array("email"=>"/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/");
+	if(!preg_match($match[$type],$value)) { return false; }
+	return true;
 }
 
 function add_order($carts)

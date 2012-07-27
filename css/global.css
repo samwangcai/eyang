@@ -9,7 +9,8 @@ transition:
 	background-color .25s linear,
 	border-color .25s linear;
 }
-body { font-family:"Î¢ÈíÑÅºÚ", Verdana, Arial, Helvetica, sans-serif; font-size:12px; line-height:1.8; margin:0 0px; color:#666; }
+* { font-family:"Î¢ÈíÑÅºÚ", Verdana, Arial, Helvetica, sans-serif; }
+body { font-family:"Î¢ÈíÑÅºÚ", Verdana, Arial, Helvetica, sans-serif; font-size:12px; line-height:1.8; margin:0 0px; color:#666;  }
 table { font-family:"Î¢ÈíÑÅºÚ", Verdana, Arial, Helvetica, sans-serif; font-size:12px; line-height:1.8; margin:0 0px; color:#666; }
 img { border:none; }
 a { text-decoration:none;  }
@@ -230,6 +231,7 @@ a { text-decoration:none;  }
 .navigation { line-height:24px; border-bottom:1px solid #ccc; color:#666; padding:10px 0; margin-bottom:10px; }
 .navigation a { color:#666; }
 
+.normalTable { width:100%; }
 .normalTable td { text-align:left; vertical-align:top; height:35px; }
 .f_t { font-size:18px; font-weight:bold; margin-bottom:5px; }
 .b_t { color:#666; line-height:24px; }
